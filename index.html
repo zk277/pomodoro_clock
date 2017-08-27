@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+<head>
+  <title>
+    Pomodoro Clock
+  </title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/pomodoro_clock.css">
+</head>
+
+<body>
+ <div id = "pomodoro" class="container-fluid">
+   <div class = "container" id = "top">
+     <div id = "green"></div>
+     <h1 class = "text-center" id = "title">Pomodoro Clock </h1>
+   </div>
+
+   <div id = "setMinutes"  class = "container">
+
+     <div class = "row">
+       <div class = "col-xs-6 text-center">
+         <h3>Session</h3>
+       </div>
+       <div class = "col-xs-6 text-center">
+         <h3>Break</h3>
+       </div>
+     </div>
+
+     <div class = "row">
+       <div id = "decSession" class ="col-xs-2 btn">
+         <i class = "fa fa-chevron-down fa-1x"></i>
+       </div>
+       <div class ="col-xs-2 text-center time">
+         <span id = "session">25</span>
+       </div>
+       <div id = "incSession" class ="col-xs-2 btn">
+         <i class = "fa fa-chevron-up fa-1x"></i>
+       </div>
+       <div id = "decBreak" class ="col-xs-2 btn">
+         <i class = "fa fa-chevron-down fa-1x"></i>
+       </div>
+       <div class ="col-xs-2 text-center time">
+         <span id = "break">5<span>
+       </div>
+       <div id = "incBreak" class ="col-xs-2 btn">
+         <i class = "fa fa-chevron-up fa-1x"></i>
+       </div>
+     </div>
+
+   </div>
+
+   <div id = "playTimer" class = "container">
+
+     <div class = "row">
+       <div class="col-xs-6">
+         <div id = "start" class = "btn btn-block" data-toggle="tooltip" title="Start clock">
+           <i class = "fa fa-play fa-3x"></i>
+         </div>
+       </div>
+       <div class="col-xs-6">
+         <div id = "refresh" class = "btn btn-block" data-toggle="tooltip" title="Stop clock and reset session and break times">
+           <i class = "fa fa-refresh fa-3x"></i>
+         </div>
+       </div>
+     </div>
+
+     <div class = "row">
+       <div class = "col-xs-12 text-center">
+         <h2 id = "action">Session</h2>
+       </div>
+     </div>
+
+     <div class = "row">
+       <div id = "clock"  class = "col-xs-12 text-center">
+       </div>
+     </div>
+
+     <div class = "row">
+       <div class="col-xs-6">
+         <div id = "pause" class = "btn btn-block" data-toggle="tooltip" title="Pause clock">
+           <i class = "fa fa-pause fa-3x"></i>
+         </div>
+       </div>
+       <div class="col-xs-6">
+         <div id = "stop" class = "btn btn-block" data-toggle="tooltip" title="Stop clock">
+           <i class = "fa fa-stop fa-3x"></i>
+         </div>
+       </div>
+     </div>
+
+   </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src='js/pomodoro_clock.js'></script
+</body>
+
+</html>
